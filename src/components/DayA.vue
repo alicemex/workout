@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1> Day A</h1>
+    <button><router-link to="/">Home</router-link></button>
       <div class="excercise-tittle"> 
         <p> Fondos asistidos</p>
         <span>4x12  <input type="checkbox" id="excercice-one" name="excercice-one" value="excercice-one"></span>
@@ -71,5 +72,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @import '../style/global.css'; 
+  @import "../style/dayA.css"
  </style>
 
