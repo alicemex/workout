@@ -1,5 +1,6 @@
 <template>
-    Welcome screen
-    <button><router-link to="/dayB">Go to Day b</router-link></button>
-    <button><router-link to="/dayA">Go to day A</router-link></button>
+<h1>    Welcome screen</h1>
+
+    <button><router-link to="/bebedelacasa">BB de la casa</router-link></button>
+    <button><router-link to="/chiquisbonita">Chiquis</router-link></button>
 </template>

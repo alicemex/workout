@@ -16,6 +16,36 @@ const routes = [
         path: "/dayB", 
         component: () => import('./components/DayB.vue')  //importing and using simultaneosly
     },
+    {   
+        name: 'DayC', 
+        path: "/dayc", 
+        component: () => import('./components/DayC.vue') 
+    },
+    {   
+        name: 'BebeCasa', 
+        path: "/bebedelacasa", 
+        component: () => import('./components/BebeCasa.vue') 
+    },
+    {   
+        name: 'ChiquisBonita', 
+        path: "/chiquisbonita", 
+        component: () => import('./components/ChiquisBonita.vue')  //importing and using simultaneosly
+    },
+    {   
+        name: 'ChiquisA', 
+        path: "/ChiquisA", 
+        component: () => import('./components/ChiquisA.vue')  //importing and using simultaneosly
+    },
+    {   
+        name: 'ChiquisB', 
+        path: "/ChiquisB", 
+        component: () => import('./components/ChiquisB.vue')  //importing and using simultaneosly
+    },
+    {   
+        name: 'ChiquisC', 
+        path: "/ChiquisC", 
+        component: () => import('./components/ChiquisC.vue')  //importing and using simultaneosly
+    },
 
 ];
 
