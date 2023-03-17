@@ -9,7 +9,7 @@
     color: white;
     left: 0;
     top: 0;
-    background-image: url("../assets/BCKGND.png");
+    /* background-image: url("../assets/BCKGND.png"); */
     background-size: contain;
     background-repeat:repeat-y ;
     background-position-x: center;
