@@ -6,7 +6,8 @@
         <p> Jalon supino</p>
         <span>4x10  <input type="checkbox" id="excercice-one" name="excercice-one" value="excercice-one"></span>
       </div>
-      <div class="excercise-one excercise"></div>
+      <img src="../assets/B/excercice-one.png">
+      <!-- <div class="excercise-one excercise"></div> -->
 
       <div class="excercise-tittle"> 
         <p> Press Barra militar</p>
