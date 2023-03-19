@@ -4,15 +4,13 @@
       <p>Remember: Warm up before trainning <br> Start with low weights</p>
       <button><router-link to="/chiquisbonita">Back</router-link></button>
         <div id="hip-trust" class="excercise-container"> 
-          <h3>1 Hip trust</h3>
+          <h3>Calf extension machine</h3>
           <p><input @click="UpdatehipTrust()" class="checkBox" type="radio"  value="10" > Done </p>
             <transition name="fade">
                 <div v-if="hipTrust">
-                    <p>Repeat: 4x10 <input class="weight" type="text"  value="10"> Lbs</p>
-                    <p>  Option 1 begginer:</p>
-                    <img  src="../assets/chiquis/A-chiquis/hip-trust.gif">
-                    <p>  Option 2 advanced:</p>
-                    <img src="../assets/chiquis/A-chiquis/hip-trust-2.gif">
+                    <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                    <p> Extension </p>
+                    <img  src="../assets/B/calf-extension.gif">
                 </div>
             </transition>
         </div>

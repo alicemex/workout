@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(37, 2, 33);
+}
 .excercise-one {
     background-image: url("../assets/excercice-one.png");
 }

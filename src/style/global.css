@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+a, a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0
+  }
 .container{
     position: absolute;
     color: white;
