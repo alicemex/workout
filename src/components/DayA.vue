@@ -11,7 +11,7 @@
               <div v-if="hipTrust">
                   <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
                   <p> Extension </p>
-                  <img  src="../assets/B/calf-extension.gif">
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
               </div>
           </transition>
       </div>
@@ -23,11 +23,9 @@
         <p><input @click="UpdatekickBack()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="kickback">
-                  <p>Repeat: 4x10 <input class="weight" type="text"  value="5"> Lbs </p>
-                  <p> Option 1 - In the machine:</p>
-                  <img  src="../assets/chiquis/A-chiquis/kickback.gif">
-                  <p> Option 2 - In cable:</p>
-                  <img  src="../assets/chiquis/A-chiquis/kickback2.gif">
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
                 
               </div>
           </transition>
@@ -38,11 +36,9 @@
         <p><input @click="UpdateSmith()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="smith">
-                  <p>Repeat: 4x10 <input class="weight" type="text" value="5"> Lbs </p>
-                  <p> Begginer: Smith Machine</p>
-                  <img  src="../assets/chiquis/A-chiquis/smithmachine.gif">
-                  <p> Advanced: Free bar</p>
-                  <img  src="../assets/chiquis/A-chiquis/squats-freebar.gif">
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
                 
               </div>
           </transition>
@@ -53,9 +49,9 @@
         <p><input @click="excercise4()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_four">
-                  <p>Repeat: 4x12 <input class="weight" type="text" value="30"> Lbs </p>
-                  <p> Leg extension machine</p>
-                  <img  src="../assets/chiquis/A-chiquis/leg-extension.gif">                  
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
               </div>
           </transition>
       </div>
@@ -64,9 +60,9 @@
         <p><input @click="excercise5()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_five">
-                  <p>Repeat: 4x10 <input class="weight" type="text" value="5"> Lbs </p>
-                  <p> Curl Femoral machine</p>
-                  <img  src="../assets/chiquis/A-chiquis/curl-femoral.gif">                  
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">  
               </div>
           </transition>
       </div>
@@ -75,10 +71,9 @@
         <p><input @click="excercise6()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_six">
-                  <p>Repeat: 4x10 <input class="weight" type="text" value="10"> Lbs </p>
-                  <p> Squat Machine stand</p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp>   
-                         
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
               </div>
           </transition>
       </div>
@@ -88,11 +83,9 @@
         <p><input @click="excercise7()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_seven">
-                  <p>Repeat: 4x12 <input class="weight" type="text" value="0"> Lbs </p>
-                  <p> Full crunch machine </p>
-                  <img  src="../assets/chiquis/A-chiquis/fullcrunchmach.gif">   
-                  <p>Replaceable for leg raise Abs:</p>
-                  <img  src="../assets/chiquis/A-chiquis/raislegsabs.gif">                            
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
+                  <p> Extension </p>
+                  <img  src="../assets/Alice/A/peckflyinvertido.webp">                  
               </div>
           </transition>
       </div>
