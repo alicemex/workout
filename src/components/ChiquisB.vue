@@ -1,15 +1,15 @@
 <template>
-    <div class="container">
+    <div id="chiquisB" class="excercises-page">
       <h1> Day B </h1>
       <p>back, soulders, chest</p>
-      <button><router-link to="/chiquisbonita">Back</router-link></button>
+      <button class="rectangle"><router-link to="/chiquisbonita">Back</router-link></button>
         <div id="hip-trust" class="excercise-container"> 
           <h3>1 Jalon supino</h3>
           <p><input @click="UpdatehipTrust()" class="checkBox" type="radio"  value="10" > Done </p>
             <transition name="fade">
                 <div v-if="hipTrust">
-                    <p>Repeat: 4x10 <input class="weight" type="text"  value="15"> Lbs</p>
-                    <p>  Option 1 begginer:</p>
+                    <p>Repeat: 4x10 <input class="weight" type="text"  value="30"> Lbs</p>
+                    <p>Your back slightly tilted back</p>
                     <img  src="../assets/B/jalon-supino.gif">
                 </div>
             </transition>
@@ -28,12 +28,12 @@
         </div>
 
         <div id="smithMachine" class="excercise-container"> 
-          <h3>3 Shoulder press</h3>
+          <h3>3 Shoulder press UP</h3>
           <p><input @click="UpdateSmith()" class="checkBox" type="radio" > Done </p>
             <transition name="fade">
                 <div v-if="smith">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="5"> Lbs </p>
-                    <p> Machine</p>
+                    <p>Repeat: 4x10 <input class="weight" type="text" value="15"> Lbs </p>
+                    <p> Make sure DO NOT open your elbows too much</p>
                     <img  src="../assets/B/shoulder-press-machine.gif">                  
                 </div>
             </transition>
@@ -44,7 +44,7 @@
           <p><input @click="excercise4()" class="checkBox" type="radio" > Done </p>
             <transition name="fade">
                 <div v-if="ex_four">
-                    <p>Repeat: 4x12 <input class="weight" type="text" value="80"> Lbs </p>
+                    <p>Repeat: 4x12 <input class="weight" type="text" value="100"> Lbs </p>
                     <p> More weight you add, the more easy it is.</p>
                     <img  src="../assets/B/dominada-asistida.webp">                  
                 </div>
@@ -55,7 +55,7 @@
           <p><input @click="excercise5()" class="checkBox" type="radio" > Done </p>
             <transition name="fade">
                 <div v-if="ex_five">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="10"> Lbs </p>
+                    <p>Repeat: 4x10 <input class="weight" type="text" value="30"> Lbs </p>
                     <p> Pec flies correct way</p>
                     <img  src="../assets/B/peckfly.gif">
                     <p> Correct way</p>
@@ -70,7 +70,10 @@
                 <div v-if="ex_six">
                     <p>Repeat: 4x10 <input class="weight" type="text" value="20"> Lbs </p>
                     <p> Triangle</p>
-                    <img  src="../assets/B/remo-con-triangulo.png">                           
+                    <img  src="../assets/B/remo-con-triangulo.png">           
+                    <p>Repeat: 4x10 <input class="weight" type="text" value="20"> Lbs </p>
+                    <p> <strong>OR replace for this one ONLY:</strong></p>
+                    <img  src="../assets/B/Remo-cerrado-en-maquina.gif">                         
                 </div>
             </transition>
         </div>
@@ -154,7 +157,7 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
-    @import "../style/chiquis.css"
+    @import "../style/routinesDays.css";
    </style>
   
   

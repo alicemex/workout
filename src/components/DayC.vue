@@ -149,19 +149,11 @@
             return this.excersice_7_State;
         }
     }, 
-    // watch:{
-    //   excersice_1_State,
-    //   excersice_2_State,
-    //   excersice_3_State,
-    //   excersice_4_State,
-    //   excersice_5_State,
-    //   excersice_6_State,
-    //   excersice_7_State
-    // }
+
   };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   /* @import '../style/global.css';  */
-  @import "../style/chiquis.css"
+  @import "../style/routinesDays.css"
  </style>

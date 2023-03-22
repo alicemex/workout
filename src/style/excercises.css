@@ -1,0 +1,81 @@
+.excercises-page{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.excercise-container{
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: rgb(36, 35, 35);
+    padding: 2px;
+    width: 90vw;
+    min-height: 130px;
+    min-height: 5vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.excercise-container h3{
+    text-transform: uppercase;
+}
+
+.excercise-container .weight{
+    width: 40px;
+    color: black;
+}
+
+
+.excercise-container img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.checkBox{
+    -webkit-transform: scale(2);
+    margin: auto 5px auto 10px;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+opacity: 0
+}
+
+/****************  CHIQUIS DAY A    ****************/
+#chiquisA {
+    background-color:var(--bluepurp);
+}
+#chiquisA h1{
+    color: var(--pink);
+}
+#chiquisA .excercise-container, #chiquisA .rectangle{
+    background: rgb(181,17,79);
+    background: radial-gradient(circle, rgba(181,17,79,1) 0%, rgba(78,12,43,1) 91%);
+}
+
+/****************  CHIQUIS DAY B    ****************/
+#chiquisB {
+   background-color:var(--purple);
+}
+#chiquisB .excercise-container, #chiquisB .rectangle{
+    background: rgb(8,5,70);
+    background: linear-gradient(180deg, rgba(8,5,70,1) 0%, rgba(51,47,208,1) 44%);
+}
+
+
+/****************  CHIQUIS DAY C    ****************/
+#chiquisC {
+    background-color: var(--yellowgreen);
+}
+#chiquisC .excercise-container,
+#chiquisC .rectangle{
+    background: rgb(12,138,64);
+    background: radial-gradient(circle, rgba(12,138,64,1) 0%, rgba(12,78,57,1) 91%);
+}

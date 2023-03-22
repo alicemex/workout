@@ -1,10 +1,11 @@
 <template>
-    <div class="container">
+    <div id="chiquisA" class="excercises-page">
       <h1> Day A</h1>
-      <p>Remember: Warm up before trainning <br> Start with low weights</p>
-      <button><router-link to="/chiquisbonita">Back</router-link></button>
+      <p>Leg - glutes</p>
+      <button class="rectangle"><router-link to="/chiquisbonita">Back</router-link></button>
+     
         <div id="hip-trust" class="excercise-container"> 
-          <h3>Calf extension machine</h3>
+          <h3>1 Calf extension machine</h3>
           <p><input @click="UpdatehipTrust()" class="checkBox" type="radio"  value="10" > Done </p>
             <transition name="fade">
                 <div v-if="hipTrust">
@@ -162,7 +163,8 @@
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
-    @import "../style/chiquis.css"
+    @import "../style/excercises.css";
+    @import "../style/global.css";
    </style>
   
   

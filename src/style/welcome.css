@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,600;0,900;1,300&display=swap');
+    *{
+    margin: 0;
+    }
+    #welcomeScreen {
+        min-height:100vh;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(41,16,167,1) 77%);
+    }
+    #welcomeScreen h1, h3{
+        color: white;
+    }
+    #welcomeScreen h1{
+        font-family: 'Bebas Neue', cursive;
+        font-size:55px;
+        text-align: center;
+    }
+    #welcomeScreen h3{
+        font-family: 'Urbanist', sans-serif;
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    #welcomeScreen button{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 0px;
+        margin: 40px auto 5px;
+    }
+    #welcomeScreen button:hover{
+        opacity: 0.5;
+        width: 205px;
+        height: 205px;
+    }
+    #welcomeScreen .column{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    }
+    #welcomeScreen  #prof-1{
+        background-image: url(../assets/profile.png);
+        background-size: 200px;
+        color: transparent;
+    }
+    #welcomeScreen  #prof-2{
+        background-image: url(../assets/chiquis/profile_chiquis.png);
+        background-position-y:-25px ;
+        background-size: 200px;
+        color: transparent;
+    }
+    #welcomeScreen   #prof-2 a, 
+    #welcomeScreen   #prof-2 a:visited, 
+    #welcomeScreen   #prof-2 a:link, 
+    #welcomeScreen    #prof-1 a, 
+    #welcomeScreen   #prof-1 a:visited, 
+    #welcomeScreen   #prof-1 a:link{
+    text-decoration: none;
+    color: transparent;
+}

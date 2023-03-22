@@ -1,50 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,600;0,900;1,300&display=swap');
+body{
+    background: rgb(3,2,28);
+    background: linear-gradient(180deg, rgba(3,2,28,1) 0%, rgba(15,8,48,1) 87%);
+    color: white;
+}
 
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size:45px;
+    margin: 15px auto;
+    text-align: center;
+}
+h3, p{
+    font-family: 'Urbanist', sans-serif;
+    margin: 5px auto;
+    text-align: center;
+}
+
+:root{
+    --purple: #2c074b;
+    --pink: #FB2576;
+    --purpneon: #332FD0;
+    --bluepurp:#0002A1;
+    --green:#03C988;
+    --darkgreen: #12996e;
+    --yellowgreen:#4d800c;
+}
+#app{
+min-height:100vh ;
+}
 *{
     margin:0;
     padding: 0;
+    color: white;
+}
+#chiquisA .rectangle a, a:visited, a:link, button{
+    text-decoration: none;
+    color: white;
 }
 
+#chiquisB .rectangle a, a:visited, a:link, button{
+    text-decoration: none;
+    color: white;
+}
+#chiquisC .rectangle a, a:visited, a:link, button{
+    text-decoration: none;
+    color: white;
+}
 a, a:visited, a:link{
     text-decoration: none;
     color: white;
 }
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s
-  }
-  .fade-enter, .fade-leave-to {
-    opacity: 0
-  }
-.container{
-    position: absolute;
-    color: white;
-    left: 0;
-    top: 0;
-    /* background-image: url("../assets/BCKGND.png"); */
-    background-size: contain;
-    background-repeat:repeat-y ;
-    background-position-x: center;
-    width: 100vw;
-    min-height: 100vh;
-    overflow-y: scroll;
-    text-align: center;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+}
+.fade-enter, .fade-leave-to {
+opacity: 0
 }
 
-.excercise-tittle p {
-    font-weight: bolder;
-    width: 90vw;
-    margin-top: 15px;
-    font-size:20px;
-}
-.excercise{
-    margin: 10px auto;
-    width: 317px;
-    background-size: contain;
-    height: 215px;
+.rectangle{
+    width: 150px;
+    height: 50px;
+    border: 0px;
     border-radius: 15px;
+    margin: 10px auto;
+    background-color: var(--purple);
 }
+
