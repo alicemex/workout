@@ -62,4 +62,6 @@
     #welcomeScreen   #prof-1 a:link{
     text-decoration: none;
     color: transparent;
+    width: 100%;
+    height: 100%;
 }

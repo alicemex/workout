@@ -19,6 +19,7 @@ h3, p{
 }
 
 :root{
+    --red:rgb(223, 32, 32);
     --purple: #2c074b;
     --pink: #FB2576;
     --purpneon: #332FD0;
@@ -35,15 +36,8 @@ min-height:100vh ;
     padding: 0;
     color: white;
 }
-#chiquisA .rectangle a, a:visited, a:link, button{
-    text-decoration: none;
-    color: white;
-}
-
-#chiquisB .rectangle a, a:visited, a:link, button{
-    text-decoration: none;
-    color: white;
-}
+#chiquisA .rectangle a, a:visited, a:link, button,
+#chiquisB .rectangle a, a:visited, a:link, button,
 #chiquisC .rectangle a, a:visited, a:link, button{
     text-decoration: none;
     color: white;

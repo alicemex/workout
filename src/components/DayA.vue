@@ -1,91 +1,103 @@
 <template>
-  <div id="chiquisA" class="excercises-page">
+  <div id="AliceA" class="excercises-page">
     <h1> Day A</h1>
-    <p> title</p>
-    <button class="rectangle"><router-link to="/chiquisbonita">Back</router-link></button>
+    <p> Biceps - Triceps - Delt. ant. - Pectoral medio</p>
+    <button class="rectangle"><router-link to="/bebedelacasa">Back</router-link></button>
    
       <div id="hip-trust" class="excercise-container"> 
-        <h3>Cristos invertidos</h3>
+        <h3>1 Peck fly invertido</h3>
+        <p>Deltoide Posterior</p>
         <p><input @click="UpdatehipTrust()" class="checkBox" type="radio"  value="10" > Done </p>
           <transition name="fade">
               <div v-if="hipTrust">
-                  <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
+                  <p>Repeat: 4x15 <input class="weight" type="text"  value="30"> Lbs</p>
                   <img  src="../assets/Alice/A/peckflyinvertido.webp">
               </div>
           </transition>
       </div>
 
 
-    <p> Press bar chest</p>
       <div id="kickBack" class="excercise-container"> 
-        <h3>Peck fly</h3>
+        <h3>2 Peck fly</h3>
+        <p>Pecho Medio</p>
         <p><input @click="UpdatekickBack()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="kickback">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="50"> Lbs</p>
+                  <img  src="../assets/Alice/A/peckfly.gif">
                 
               </div>
           </transition>
       </div>
 
       <div id="smithMachine" class="excercise-container"> 
-        <h3>hammer with dumbells</h3>
+        <h3>3 hammer with dumbells</h3>
+        <p>Biceps</p>
         <p><input @click="UpdateSmith()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="smith">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
+                <p>Repeat: 4x12 <input class="weight" type="text"  value="6"> Lbs</p>
+                  <p> Intecarlar brazo </p>
+                  <img  src="../assets/C/martillos2x1.gif">
                 
               </div>
           </transition>
       </div>
 
       <div id="ex-4" class="excercise-container"> 
-        <h3>Pull over hight</h3>
+        <h3>4 Pull over</h3>
+        <p>Dorsales, pecho y triceps</p>
         <p><input @click="excercise4()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_four">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="30"> Lbs</p>
+                <p>try to add 5lbs more in the last set </p>
+                  <img  src="../assets/Alice/A/pullover.gif">
               </div>
           </transition>
       </div>
       <div id="ex-5" class="excercise-container"> 
-        <h3>Raise bar biceps</h3>
+        <h3>5 Cable bar biceps</h3>
+        <p>Biceps y antebrazo</p>
         <p><input @click="excercise5()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_five">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">  
+                <p>Repeat: 4x15 <input class="weight" type="text"  value="30"> Lbs</p>
+                  <img  src="../assets/Alice/A/bicepscablebar.gif">  
               </div>
           </transition>
       </div>
       <div id="ex-6" class="excercise-container"> 
-        <h3>pull rope triceps</h3>
+        <h3>6 pull rope triceps</h3>
+        <p>Triceps</p>
         <p><input @click="excercise6()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_six">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">
+                <p>Repeat: 4x12 <input class="weight" type="text"  value="30"> Lbs</p>
+                  <img  src="../assets/C/triceps-rope.gif">
               </div>
           </transition>
       </div>
 
       <div id="ex-7" class="excercise-container"> 
-        <h3>7 excercise </h3>
+        <h3>7 Fondos asistidos </h3>
+        <p>Triceps y pecho</p>
         <p><input @click="excercise7()" class="checkBox" type="radio" > Done </p>
           <transition name="fade">
               <div v-if="ex_seven">
-                <p>Repeat: 4x15 <input class="weight" type="text"  value="10"> Lbs</p>
-                  <p> Extension </p>
-                  <img  src="../assets/Alice/A/peckflyinvertido.webp">                  
+                <p>Repeat: 4x12 <input class="weight" type="text"  value="90"> Lbs</p>
+                  <img  src="../assets/C/fondos-asistidos.jpg">                  
+              </div>
+          </transition>
+      </div>
+      <div id="ex-8" class="excercise-container"> 
+        <h3>8 bar/polea remo al menton</h3>
+        <p>trapecio y hombro</p>
+        <p><input @click="excercise8()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="eight">
+                <p>Repeat: 4x12 <input class="weight" type="text"  value="30"> Lbs</p>
+                  <img  src="../assets/B/remoalmenton.gif">                  
               </div>
           </transition>
       </div>
@@ -102,7 +114,8 @@ export default {
     excersice_4_State: true,
     excersice_5_State: true,
     excersice_6_State: true,
-    excersice_7_State: true
+    excersice_7_State: true,
+    excersice_8_State: true
   }),
   methods: {
     UpdatehipTrust() {
@@ -125,6 +138,9 @@ export default {
     },
     excercise7(){
       this.excersice_7_State =  !this.excersice_7_State;
+    },
+    excercise8(){
+      this.excersice_8_State =  !this.excersice_8_State;
     }
   },
   computed:{
@@ -148,7 +164,10 @@ export default {
       },
       ex_seven(){
           return this.excersice_7_State;
-      }
+      },
+      eight(){
+          return this.excersice_8_State;
+      }   
   }
 };
 
