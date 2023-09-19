@@ -1,163 +1,154 @@
 <template>
-    <div id="chiquisB" class="excercises-page">
-      <h1> Day B </h1>
-      <p>back, soulders, chest</p>
-      <button class="rectangle"><router-link to="/chiquisbonita">Back</router-link></button>
-        <div id="hip-trust" class="excercise-container"> 
-          <h3>1 Jalon supino</h3>
-          <p><input @click="UpdatehipTrust()" class="checkBox" type="radio"  value="10" > Done </p>
-            <transition name="fade">
-                <div v-if="hipTrust">
-                    <p>Repeat: 4x10 <input class="weight" type="text"  value="30"> Lbs</p>
-                    <p>Your back slightly tilted back</p>
-                    <img  src="../assets/B/jalon-supino.gif">
-                </div>
-            </transition>
-        </div>
+  <div id="chiquisB" class="excercises-page">
+    <h1> Day B</h1>
+    <p>Biceps - triceps - shoulders</p>
+    <button class="rectangle"><router-link to="/chiquisbonita">Back</router-link></button>
+   
+      <div id="ex1" class="excercise-container"> 
+        <h3>Triceps extension con barra "V"</h3>
+        <p><input @click="ex1()" class="checkBox" type="radio"  value="10" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex1_st">
+                  <p>Repeat: 4x10<input class="weight" type="text"  value="10"> Lbs</p>
+                  <p>triceps extension</p>
+                  <img  src="../assets/B/extensiontricepsbarrav.gif">
+              </div>
+          </transition>
+      </div>
 
-        <div id="kickBack" class="excercise-container"> 
-          <h3>2 Chest press neutral </h3>
-          <p><input @click="UpdatekickBack()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="kickback">
-                    <p>Repeat: 4x14 <input class="weight" type="text"  value="15"> Lbs </p>
-                    <p> In the machine:</p>
-                    <img  src="../assets/B/chest-press-neutro.gif">                 
-                </div>
-            </transition>
-        </div>
+      <div id="ex2" class="excercise-container"> 
+        <h3>Curl biceps 45°</h3>
+        <p><input @click="ex2()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex2_st">
+                  <p>Repeat: 4x10 <input class="weight" type="text"  value="5"> Lbs </p>
+                  <p> do not tilt seat more than 45°</p>
+                  <img  src="../assets/B/curlbiceps45.gif">  
+              </div>
+          </transition>
+      </div>
 
-        <div id="smithMachine" class="excercise-container"> 
-          <h3>3 Shoulder press UP</h3>
-          <p><input @click="UpdateSmith()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="smith">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="15"> Lbs </p>
-                    <p> Make sure DO NOT open your elbows too much</p>
-                    <img  src="../assets/B/shoulder-press-machine.gif">                  
-                </div>
-            </transition>
-        </div>
+      <div id="ex3" class="excercise-container"> 
+        <h3>3 Chest Press</h3>
+        <p><input @click="ex3()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex3_st">
+                  <p>Repeat: 4x10 <input class="weight" type="text" value="5"> Lbs </p>
+                  <p>chest press CORRECT WAY of seating</p>
+                  <img  src="../assets/B/chesspress-neutro.gif">
+                  <p>correct elbows position</p>
+                  <img  src="../assets/B/chesspress-neutral2.gif">
+                
+              </div>
+          </transition>
+      </div>
 
-        <div id="ex-4" class="excercise-container"> 
-          <h3>4 Dominada asistida</h3>
-          <p><input @click="excercise4()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="ex_four">
-                    <p>Repeat: 4x12 <input class="weight" type="text" value="100"> Lbs </p>
-                    <p> More weight you add, the more easy it is.</p>
-                    <img  src="../assets/B/dominada-asistida.webp">                  
-                </div>
-            </transition>
-        </div>
-        <div id="ex-5" class="excercise-container"> 
-          <h3>5 Pec fly with machine</h3>
-          <p><input @click="excercise5()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="ex_five">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="30"> Lbs </p>
-                    <p> Pec flies correct way</p>
-                    <img  src="../assets/B/peckfly.gif">
-                    <p> Correct way</p>
-                    <img  src="../assets/B/peckfly2.gif">                  
-                </div>
-            </transition>
-        </div>
-        <div id="ex-6" class="excercise-container"> 
-          <h3>6 Remo seated with triangle </h3>
-          <p><input @click="excercise6()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="ex_six">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="20"> Lbs </p>
-                    <p> Triangle</p>
-                    <img  src="../assets/B/remo-con-triangulo.png">           
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="20"> Lbs </p>
-                    <p> <strong>OR replace for this one ONLY:</strong></p>
-                    <img  src="../assets/B/Remo-cerrado-en-maquina.gif">                         
-                </div>
-            </transition>
-        </div>
+      <div id="ex-4" class="excercise-container"> 
+        <h3>4 Peck fly</h3>
+        <p><input @click="ex4()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex4_st">
+                  <p>Repeat: 4x12 <input class="weight" type="text" value="30"> Lbs </p>
+                  <p> Peck fly</p>
+                  <img  src="../assets/B/peckflyok.gif">                  
+              </div>
+          </transition>
+      </div>
+      <div id="ex-5" class="excercise-container"> 
+        <h3>5 twist torso machine</h3>
+        <p><input @click="ex5()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex5_st">
+                  <p>Repeat: 4x10 <input class="weight" type="text" value="5"> Lbs </p>
+                  <p> lift fast - down slowly</p>
+                  <img  src="../assets/B/twist-torso.gif">                  
+              </div>
+          </transition>
+      </div>
+      <div id="ex-6" class="excercise-container"> 
+        <h3>6 Crunchs machine</h3>
+        <p><input @click="ex6()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex6_st">
+                  <p>Repeat: 4x10 <input class="weight" type="text" value="10"> Lbs </p>
+                  <p>increase 5lbs every serie</p>
+                  <img  src="../assets/B/crunch-maquina.gif">                            
+              </div>
+          </transition>
+      </div>
 
-        <div id="ex-7" class="excercise-container"> 
-          <h3>7 Body weight Back Extension </h3>
-          <p><input @click="excercise7()" class="checkBox" type="radio" > Done </p>
-            <transition name="fade">
-                <div v-if="ex_seven">
-                    <p>Repeat: 4x10 <input class="weight" type="text" value="0"> Lbs </p>
-                    <p> Begginner: No weight added </p>
-                    <img  src="../assets/B/back-extension.gif">                             
-                </div>
-            </transition>
-        </div>
-    </div>
-  </template>
-  
-  
-  <script>
-  export default {
-    data: () => ({
-      hiptrustState: true,
-      kickBackState:true,
-      smithState:true,
-      excersice_4_State: true,
-      excersice_5_State: true,
-      excersice_6_State: true,
-      excersice_7_State: true
-    }),
-    methods: {
-      UpdatehipTrust() {
-        this.hiptrustState = !this.hiptrustState;
-      },
-      UpdatekickBack() {
-        this.kickBackState = !this.kickBackState;
-      },
-      UpdateSmith() {
-        this.smithState = !this.smithState;
-      },
-      excercise4(){
-        this.excersice_4_State = !this.excersice_4_State;
-      },
-      excercise5(){
-        this.excersice_5_State =  !this.excersice_5_State;
-      },
-      excercise6(){
-        this.excersice_6_State =  !this.excersice_6_State;
-      },
-      excercise7(){
-        this.excersice_7_State =  !this.excersice_7_State;
-      }
+      <div id="ex-7" class="excercise-container"> 
+        <h3>7 hanging leg raises </h3>
+        <p><input @click="ex7()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex7_st">
+                  <p>Repeat: 4x12 <input class="weight" type="text" value="0"> Lbs </p>
+                  <p>lift fast - down slowly</p>
+                  <img  src="../assets/B/hanging-leg-raises.gif">                      
+              </div>
+          </transition>
+      </div>
+      <div id="ex-8" class="excercise-container"> 
+        <h3>8 remo al menton</h3>
+        <p><input @click="ex8()" class="checkBox" type="radio" > Done </p>
+          <transition name="fade">
+              <div v-if="this.ex8_st">
+                  <p>Repeat: 4x12 <input class="weight" type="text" value="0"> Lbs </p>
+                  <p>lift fast - down slowly</p>
+                  <img  src="../assets/B/remoalmentonbarra.gif">                      
+              </div>
+          </transition>
+      </div>
+  </div>
+</template>
+
+
+<script>
+export default {
+  data: () => ({
+    ex1_st: true,
+    ex2_st:true,
+    ex3_st:true,
+    ex4_st: true,
+    ex5_st: true,
+    ex6_st: true,
+    ex7_st: true,
+    ex8_st: true,
+  }),
+  methods: {
+    ex1() {
+      this.ex1_st = !this.ex1_st;
     },
-    computed:{
-        hipTrust() {
-        return this.hiptrustState;
-      },
-        kickback() {
-        return this.kickBackState;
-      },
-        smith(){
-        return this.smithState;
-        },
-        ex_four(){
-            return this.excersice_4_State;
-        },
-        ex_five(){
-            return this.excersice_5_State;
-        },
-        ex_six(){
-            return this.excersice_6_State;
-        },
-        ex_seven(){
-            return this.excersice_7_State;
-        }
+    ex2() {
+      this.ex2_st = !this.ex2_st;
+    },
+    ex3() {
+      this.ex3_st = !this.ex3_st;
+    },
+    ex4(){
+      this.ex4_st = !this.ex4_st;
+    },
+    ex5(){
+      this.ex5_st =  !this.ex5_st;
+    },
+    ex6(){
+      this.ex6_st =  !this.ex6_st;
+    },
+    ex7(){
+      this.ex7_st =  !this.ex7_st;
+    },
+    ex8(){
+      this.ex8_st =  !this.ex8_st;
     }
-  };
+  },
+};
 
-  </script>
-  
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-    @import "../style/routinesDays.css";
-   </style>
-  
-  
+</script>
+
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+  @import "../style/excercises.css";
+  @import "../style/global.css";
+ </style>
+
